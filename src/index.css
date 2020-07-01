@@ -1,16 +1,15 @@
-
-
 html, body {
     height: 100%; width: 100%;
     padding: 0; margin: 0;
 }
 
 body {
-  background: #000 url("https://i.pinimg.com/474x/4c/4d/2a/4c4d2aac1de0fcb404ad650f46f4cddf.jpg") repeat bottom center;
+  background: #000 repeat bottom center;
+  background-image: url("./images/background.png");
 }
 
 .center-main{
-  margin-top: 14vh; 
+  margin-top: 14vh;
 }
 
 .container {
@@ -23,11 +22,8 @@ body {
 }
 
 .item {
-  /* width: 33.3333%; */
-  /* max-width: 300px;  */
-  /* padding-bottom: 32%; */
-  /* margin-bottom: 2%; */
   position: relative;
+  text-align: center;
 }
 
 .bottom-right-img{
