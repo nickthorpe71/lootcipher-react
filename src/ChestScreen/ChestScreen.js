@@ -1,5 +1,5 @@
 import React from 'react';
-import chest from '../images/chest.png';
+import chest from '../images/main-chest.png';
 import searchTerms from '../SearchTerms/SearchTerms'
 import AppContext from '../AppContext'
 import AccountValue from '../AccountValue/AccountValue'
@@ -82,11 +82,8 @@ export default class ChestScreen extends React.Component {
 
     materials = materials.replace(/.{100}\S*\s+/g, "$&@").split(/\s+@/)[0];
 
-    //determine category
     const category = item.taxonomy_path[item.taxonomy_path.length - 1];
-    //determine url
     const url = item.url;
-    //determine score
     let score = Math.ceil((item.price / 10) * (item.price / 10));
 
     //determine description
